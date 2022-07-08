@@ -115,7 +115,7 @@ int main()
 
                 else if(command=="open notepad")
                 {
-                    cout<<"openining notepad"<<endl;
+                    cout<<"opening notepad"<<endl;
                     string phrase = "opening notepad";
                     string command = "espeak \"" + phrase + "\"";
                     const char *charCommand = command.c_str();
@@ -132,48 +132,6 @@ int main()
                     system(charCommand);
                     CreateProcess(TEXT("C:\\Windows\\write.exe"), NULL, NULL, NULL, FALSE, NULL, NULL, NULL, &startInfo, &processInfo);
                 }
-
-                /*else if(command=="open Microsoft Excel")
-                {
-                    cout<<"opening Microsoft Excel"<<endl;
-                    string phrase = "opening Microsoft Excel";
-                    string command = "espeak \"" + phrase + "\"";
-                    const char *charCommand = command.c_str();
-                    system(charCommand);
-                    CreateProcess(TEXT("C:\\Program Files\\WindowsApps\\Microsoft.Office.Desktop.Excel_16051.14326.20238.0_x86__8wekyb3d8bbwe\\Office16\\EXCEL.exe"), NULL, NULL, NULL, FALSE, NULL, NULL, NULL, &startInfo, &processInfo);
-                }*/
-
-                /*else if(command=="open Microsoft Word")
-                {
-                    cout<<"opening Microsoft Word"<<endl;
-                    string phrase = "opening Microsoft Word";
-                    string command = "espeak \"" + phrase + "\"";
-                    const char *charCommand = command.c_str();
-                    system(charCommand);
-                    CreateProcess(TEXT("C:\\Program Files\\WindowsApps\\Microsoft.Office.Desktop.Word_16051.14326.20238.0_x86__8wekyb3d8bbwe\\Office16\\WINWORD.exe"), NULL, NULL, NULL, FALSE, NULL, NULL, NULL, &startInfo, &processInfo);
-                }
-
-                else if(command=="open Microsoft Paint")
-                {
-                    cout<<"opening Microsoft Paint"<<endl;
-                    string phrase = "opening Microsoft Paint";
-                    string command = "espeak \"" + phrase + "\"";
-                    const char *charCommand = command.c_str();
-                    system(charCommand);
-                    CreateProcess(TEXT("C:\\Windows\\System32\\mspaint.exe"), NULL, NULL, NULL, FALSE, NULL, NULL, NULL, &startInfo, &processInfo);
-                }*/
-
-                /*else if(command=="play music")
-                {
-                    cout<<"playing music now"<<endl;
-                    string phrase = "playing music now";
-                    string command = "espeak \"" + phrase + "\"";
-                    const char *charCommand = command.c_str();
-                    system(charCommand);
-                    mciSendString("open \"despacito_justin_bieber.mp3\" type mpegvideo alias mp3", NULL, 0, NULL);
-                    mciSendString("play mp3", NULL, 0, NULL);
-                }*/
-
                 else if(command=="open google")
                 {
                     cout<<"openining google"<<endl;
@@ -226,27 +184,6 @@ int main()
                     system(charCommand);
                     ShellExecute(NULL,"open","avengers.png",NULL, NULL, SW_NORMAL);
                 }
-
-
-                /*else if(command=="open oops book")
-                {
-                    cout<<"opening oops book"<<endl;
-                    string phrase = "opening oops book";
-                    string command = "espeak \"" + phrase + "\"";
-                    const char *charCommand = command.c_str();
-                    system(charCommand);
-                    ShellExecute(NULL,"open","C:\\Users\\rajiv\\Documents\\6th sem\\oops c++ balaguruswamy.pdf",NULL, NULL, SW_NORMAL);
-                }
-
-                else if(command=="open video")
-                {
-                    cout<<"opening video"<<endl;
-                    string phrase = "opening video";
-                    string command = "espeak \"" + phrase + "\"";
-                    const char *charCommand = command.c_str();
-                    system(charCommand);
-                    ShellExecute(NULL,"open","D:\Downloads\Personal-Assistant-application\WIN_20220702_22_13_07_Pro.mp4",NULL, NULL, SW_NORMAL);
-                } */
 
                 else if(command=="bye" || command=="exit")
                 {
